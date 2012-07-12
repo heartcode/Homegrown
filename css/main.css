@@ -1,0 +1,233 @@
+/* VARIABLES */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* TYPOGRAPHY */
+/* Mixins - functions */
+/* return em's */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.25em;
+  text-rendering: optimizelegibility; }
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+  margin-bottom: 0.333em;
+  text-rendering: optimizelegibility; }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  text-rendering: optimizelegibility; }
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.333;
+  margin-bottom: 0.667em;
+  text-rendering: optimizelegibility; }
+
+h5 {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0.75em;
+  text-rendering: optimizelegibility; }
+
+h6 {
+  font-size: 0.75em;
+  line-height: 2;
+  margin-bottom: 1em;
+  text-rendering: optimizelegibility; }
+
+.header24 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  text-rendering: optimizelegibility;
+  font-weight: 900; }
+
+.header36 {
+  font-size: 2.25em;
+  line-height: 1.333;
+  margin-bottom: 0.333em;
+  text-rendering: optimizelegibility;
+  font-weight: 900; }
+
+.header48 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.25em;
+  text-rendering: optimizelegibility;
+  font-weight: 900; }
+
+.header64 {
+  font-size: 4em;
+  line-height: 1.125;
+  margin-bottom: 0.188em;
+  text-rendering: optimizelegibility;
+  font-weight: 900; }
+
+.header72 {
+  font-size: 4.5em;
+  line-height: 1;
+  margin-bottom: 0.167em;
+  text-rendering: optimizelegibility;
+  font-weight: 900; }
+
+.header96 {
+  font-size: 6em;
+  line-height: 1;
+  margin-bottom: 0.125em;
+  text-rendering: optimizelegibility;
+  font-weight: 900; }
+
+/* GRID */
+.col1 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 3.75em; }
+
+.col2 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 8.75em; }
+
+.col3 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 13.75em; }
+
+.col4 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 18.75em; }
+
+.col5 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 23.75em; }
+
+.col6 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 28.75em; }
+
+.col7 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 33.75em; }
+
+.col8 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 38.75em; }
+
+.col9 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 43.75em; }
+
+.col10 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 48.75em; }
+
+.col11 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 53.75em; }
+
+.col12 {
+  float: left;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  width: 58.75em; }
+
+.group {
+  margin: 1.5em 0; }
+  .group:before, .group:after {
+    content: "";
+    display: table; }
+  .group:after {
+    clear: both; }
+  .group {
+    zoom: 1; }
+
+.container {
+  margin: 0 auto;
+  width: 60em; }
+
+.img-scale {
+  width: 100%; }
+
+img, object, embed {
+  max-width: 100%;
+  height: auto; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+body {
+  background: url("../img/baseline-grid.png") center top repeat; }

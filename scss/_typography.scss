@@ -1,0 +1,120 @@
+/* TYPOGRAPHY */
+
+/* Mixins - functions */
+
+/* return em's */
+@function em($target, $val: $context) {
+	@if $target == 0 { @return 0 }
+	@return $target / $val + 0em;
+}
+
+
+@function lineHeight($amount: 1, $val: $context) {
+	@return em($baseline * $amount, $val);
+}
+
+
+@mixin heading($size) {
+	font-size: em($size);
+	line-height: heading-line-height($size);
+	margin-bottom: em($demiline, $size);
+	text-rendering: optimizelegibility;
+}
+
+
+@function heading-line-height($size) {
+	
+	$line-height: $baseline;
+	
+	$match: false;
+	@while $match != true {
+		
+		@if $size == $line-height {
+			$match: true;
+		} @else if  $size < $line-height {
+			$match: true;
+		} @else if $size > $line-height {
+			$line-height: $line-height + $baseline;
+		} @else {
+			$match: true;
+		}
+		
+	} 
+
+	@return ($line-height / $size);
+}
+
+
+body {
+	font-family: $body-font;
+	font-size: em($context, $context);
+	line-height: 1.5;
+}
+
+
+h1 {
+	@include heading(48);
+}
+
+h2 {
+	@include heading(36);
+}
+
+h3 {
+	@include heading(24);
+}
+
+h4 {
+	@include heading(18);
+}
+
+h5 {
+	@include heading(16);
+}
+
+h6 {
+	@include heading(12);
+}
+
+// SUPER HEADERS //
+.header24 {
+	@include heading(24);
+	font-weight: 900;
+}
+
+.header36 {
+	@include heading(36);
+	font-weight: 900;
+}
+
+.header48 {
+	@include heading(48);
+	font-weight: 900;
+}
+
+.header64 {
+	@include heading(64);
+	font-weight: 900;
+}
+
+.header72 {
+	@include heading(72);
+	font-weight: 900;
+}
+
+.header96 {
+	@include heading(96);
+	font-weight: 900;
+}
+
+// COPY //
+p {
+	
+}
+
+
+
+
+
+
+

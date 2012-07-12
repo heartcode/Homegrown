@@ -1,0 +1,47 @@
+
+@mixin width ($cols:1) {
+	width: #{($cols * ($column + $gutter) - $gutter) / $m}em;
+}
+
+@mixin container($cols:12) {
+	width: #{($cols * ($column + ($gutter) )) / $m}em;
+}
+
+/* GRID */
+@mixin float-left () {float: left;}
+
+@mixin col($margin) {
+	margin-left: #{($margin / 2) / $m}em;
+	margin-right: #{($margin / 2) / $m}em;
+}
+
+.col1 { @include float-left; @include col($gutter); @include width(1); }
+.col2 { @include float-left; @include col($gutter); @include width(2); }
+.col3 { @include float-left; @include col($gutter); @include width(3); }
+.col4 { @include float-left; @include col($gutter); @include width(4); }
+.col5 { @include float-left; @include col($gutter); @include width(5); }
+.col6 { @include float-left; @include col($gutter); @include width(6); }
+.col7 { @include float-left; @include col($gutter); @include width(7); }
+.col8 { @include float-left; @include col($gutter); @include width(8); }
+.col9 { @include float-left; @include col($gutter); @include width(9); }
+.col10 { @include float-left; @include col($gutter); @include width(10); }
+.col11 { @include float-left; @include col($gutter); @include width(11); }
+.col12 { @include float-left; @include col($gutter); @include width(12); }
+
+.group {
+  @include clearfix;
+	margin: 1.5em 0;
+}
+
+.container {
+	margin: 0 auto;
+	@include container($max-cols);
+}
+
+.img-scale {
+	width: 100%;
+}
+
+// RESPONSIVE IMG
+img, object, embed {max-width: 100%; height: auto; }
+img { -ms-interpolation-mode: bicubic; }

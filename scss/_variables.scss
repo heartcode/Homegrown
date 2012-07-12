@@ -1,0 +1,12 @@
+/* VARIABLES */
+//$body-font: Georgia, "Times New Roman", serif;
+$body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$context: 16;
+$baseline: 24;
+$demiline: $baseline / 2;
+
+$m: $context * 1;	// Shorthand for outputting ems
+$column: 60;	// The column-width of your grid in pixels
+$gutter: 20;	// The gutter-width of your grid in pixels
+$max-cols: 12;
