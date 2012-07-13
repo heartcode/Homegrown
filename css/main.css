@@ -58,43 +58,50 @@ h1 {
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.25em;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000; }
 
 h2 {
   font-size: 2.25em;
   line-height: 1.333;
   margin-bottom: 0.333em;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000; }
 
 h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 0.5em;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000; }
 
 h4 {
   font-size: 1.125em;
   line-height: 1.333;
   margin-bottom: 0.667em;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000; }
 
 h5 {
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 0.75em;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000; }
 
 h6 {
   font-size: 0.75em;
   line-height: 2;
   margin-bottom: 1em;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000; }
 
 .header24 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 0.5em;
   text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000;
   font-weight: 900; }
 
 .header36 {
@@ -102,6 +109,7 @@ h6 {
   line-height: 1.333;
   margin-bottom: 0.333em;
   text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000;
   font-weight: 900; }
 
 .header48 {
@@ -109,6 +117,7 @@ h6 {
   line-height: 1;
   margin-bottom: 0.25em;
   text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000;
   font-weight: 900; }
 
 .header64 {
@@ -116,6 +125,7 @@ h6 {
   line-height: 1.125;
   margin-bottom: 0.188em;
   text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000;
   font-weight: 900; }
 
 .header72 {
@@ -123,6 +133,7 @@ h6 {
   line-height: 1;
   margin-bottom: 0.167em;
   text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000;
   font-weight: 900; }
 
 .header96 {
@@ -130,7 +141,11 @@ h6 {
   line-height: 1;
   margin-bottom: 0.125em;
   text-rendering: optimizelegibility;
+  outline: 1px solid #ff0000;
   font-weight: 900; }
+
+p {
+  margin: 0 0 1em 0; }
 
 /* GRID */
 .col1 {
@@ -230,7 +245,55 @@ img {
   -ms-interpolation-mode: bicubic; }
 
 /* RESPONSIVE */
-@media screen and (max-width: 57em) {
+@media screen and (max-width: 30em) {
+  .col3, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+    width: 18.75em; }
+
+  .container {
+    width: 20em; }
+
+  .header24 {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0.75em;
+    text-rendering: optimizelegibility;
+    outline: 1px solid #ff0000; }
+
+  .header36 {
+    font-size: 1.125em;
+    line-height: 1.333;
+    margin-bottom: 0.667em;
+    text-rendering: optimizelegibility;
+    outline: 1px solid #ff0000; }
+
+  .header48 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    text-rendering: optimizelegibility;
+    outline: 1px solid #ff0000; }
+
+  .header64 {
+    font-size: 2.25em;
+    line-height: 1.333;
+    margin-bottom: 0.333em;
+    text-rendering: optimizelegibility;
+    outline: 1px solid #ff0000; }
+
+  .header72 {
+    font-size: 2.25em;
+    line-height: 1.333;
+    margin-bottom: 0.333em;
+    text-rendering: optimizelegibility;
+    outline: 1px solid #ff0000; }
+
+  .header96 {
+    font-size: 2.25em;
+    line-height: 1.333;
+    margin-bottom: 0.333em;
+    text-rendering: optimizelegibility;
+    outline: 1px solid #ff0000; } }
+@media screen and (min-width: 31em) and (max-width: 60em) {
   .col7, .col8, .col9, .col10, .col11, .col12 {
     width: 28.75em; }
 

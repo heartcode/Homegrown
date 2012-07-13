@@ -1,6 +1,41 @@
 /* RESPONSIVE */
 
-@media screen and (max-width: 57em) {
+@media screen and (max-width: 30em) {
+	.col3, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+		@include width(4);
+	}
+	
+	.container {
+		width: 20em;
+	}
+	
+	.header24 {
+		@include heading(16);
+	}
+
+	.header36 {
+		@include heading(18);
+	}
+
+	.header48 {
+		@include heading(24);
+	}
+
+	.header64 {
+		@include heading(36);
+	}
+
+	.header72 {
+		@include heading(36);
+	}
+
+	.header96 {
+		@include heading(36);
+	}
+}
+
+
+@media screen and (min-width: 31em) and (max-width: 60em) {
 	
 	.col7, .col8, .col9, .col10, .col11, .col12 {
 		@include width(6);

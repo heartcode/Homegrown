@@ -19,6 +19,7 @@
 	line-height: heading-line-height($size);
 	margin-bottom: em($demiline, $size);
 	text-rendering: optimizelegibility;
+	outline: 1px solid #ff0000;
 }
 
 
@@ -109,7 +110,7 @@ h6 {
 
 // COPY //
 p {
-	
+	margin: 0 0 em($context, $context) 0;
 }
 
 
