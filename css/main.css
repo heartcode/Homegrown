@@ -220,19 +220,20 @@ p {
   margin-right: 0.625em;
   width: 58.75em; }
 
+.group:before, .group:after {
+  content: "";
+  display: table; }
+.group:after {
+  clear: both; }
 .group {
-  margin: 1.5em 0; }
-  .group:before, .group:after {
-    content: "";
-    display: table; }
-  .group:after {
-    clear: both; }
-  .group {
-    zoom: 1; }
+  zoom: 1; }
 
 .container {
   margin: 0 auto;
   width: 60em; }
+
+.wrapper {
+  width: 100%; }
 
 .img-scale {
   width: 100%; }

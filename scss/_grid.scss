@@ -30,7 +30,6 @@
 
 .group {
   @include clearfix;
-	margin: 1.5em 0;
 }
 
 .container {
@@ -38,6 +37,9 @@
 	@include container($max-cols);
 }
 
+.wrapper {
+	width: 100%;
+}
 .img-scale {
 	width: 100%;
 }
